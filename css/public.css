@@ -1,0 +1,310 @@
+/* header开始 */
+*{
+    margin: 0;
+    padding: 0;
+}
+#img_door{
+    width: 100%;
+    height: 100%;
+}
+ .top{
+     position: relative;
+    /* float: left; */
+    width: 100%;
+    height: 150px;
+    /* border-bottom: 4px solid red; */
+} 
+#top_2{
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    width: 40%;
+    height: 50px;
+    /* background-color: burlywood; */
+}
+/* 导航栏开始 */
+nav {
+  /* background-color: #ADD8E6; */
+  height: 40px;
+  /* background-color: aquamarine; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 100vh; */
+}
+.clock{
+
+padding-top: 6px; 
+ font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+  /* border: 1px solid red; */
+  padding-left: 60px;
+}
+
+ul {
+  height: 40px;
+  position: relative;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  width: 200px;
+  line-height: 40px;
+  text-align: center;
+}
+
+ul li a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: brown;
+  text-decoration: none;
+}
+
+.slider {
+  width: 120px;
+  height: 40px;
+  background-color: #5352ed;
+  border-radius: 4px;
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  z-index: -1;
+  transition: all ease 0.4s;
+  animation: 2s ease-in-out waves infinite;
+}
+
+ /* li:nth-child(1):hover ~ .slider {
+  left: 50px;
+}
+
+li:nth-child(2):hover ~ .slider {
+  left: 241px;
+}
+
+li:nth-child(3):hover ~ .slider {
+  left: 443px;
+}
+
+li:nth-child(4):hover ~ .slider {
+  left: 643px;
+}
+
+li:nth-child(5):hover ~ .slider {
+  left: 843px;
+}
+li:nth-child(6):hover ~ .slider {
+  left: 1039px;
+}  */
+
+ @keyframes waves {
+  from {
+    clip-path: polygon(
+      0% 17%,
+      9% 10%,
+      18% 4%,
+      30% 0%,
+      43% 1%,
+      49% 4%,
+      57% 7%,
+      66% 10%,
+      78% 11%,
+      89% 11%,
+      96% 9%,
+      100% 7%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 4%,
+      6% 9%,
+      13% 13%,
+      23% 15%,
+      31% 16%,
+      42% 15%,
+      49% 13%,
+      61% 10%,
+      71% 5%,
+      81% 3%,
+      90% 2%,
+      100% 5%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  to {
+    clip-path: polygon(
+      0% 17%,
+      9% 10%,
+      18% 4%,
+      30% 0%,
+      43% 1%,
+      49% 4%,
+      57% 7%,
+      66% 10%,
+      78% 11%,
+      89% 11%,
+      96% 9%,
+      100% 7%,
+      100% 100%,
+      0% 100%
+    );
+  }
+} 
+/* headr结束 */
+
+
+/* 底部盒子开始 */
+.footer{
+    background-color: rgba(0, 0, 0, 0.522);
+    width: 100%;
+    height: 450px;
+    color: azure;
+  }
+  .footer-first{
+    /* border: 1px solid red; */
+    display: flex;
+  }
+  .footer-second{
+    display: flex;
+  
+  }
+  .first-first{
+    /* border: 1px solid red; */
+    /* height: 20px; */
+    width:380px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .first-second{
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .footer-second{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+  }
+  .second-first,.second-second,.second-third{
+    /* border: 1px solid red; */
+    margin: 2%;
+    width: 30%;
+    height: 300px;
+  }
+  .sff,.ssf,.stf{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .sft,.sst,.stt{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .sfs,.sss,.sts{
+    width:200px ;
+    height: 3px;
+    background-color: red;
+  }
+  .line{
+    width: 80%;
+    height: 3px;
+    background-color: red;
+    margin-top: -220px;
+    margin-left: 10%;
+  }
+  .third-first{
+    
+    margin-top: 10px;
+    display: flex;
+    flex-wrap:nowrap;
+    
+  }
+  .third-first div{
+    margin-left: 110px;
+    /* border: 2px solid red; */
+    width: 15%;
+    height: 20px;
+  }
+  /* .third-second{
+    margin-top: 30px;
+    text-align: center;
+  } */
+  /* 盒子底部结束 */
+
+  /* 底部返回顶部开始 */
+    /* .return{
+    width: 100%;
+    height: 100px;
+    color: white;
+    border: 1px solid red;
+  }
+  .return1{
+    margin-top: 0px;
+    font-size: 100px;
+    color: black;
+    text-align: center;
+
+  }   */
+  /* .return2{
+    color: black;
+    text-align: center;
+  } */
+
+
+
+  /* 图片遮罩层开始 */
+
+
+  /* 因为每个图片的大小可能不同，应该在每个图片插入的地方规定大小 */
+/* .box{
+    height: 800px;
+    width: 540px;
+    margin: 100px auto 0px;
+    background-color: white;
+} */
+
+.img{
+    position: relative;
+}
+.img-mask{
+    height: 800px;
+    width: 540px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s ease;
+}
+.img .img-title{
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+    transition: top 1s ease;
+}
+.img .img-intro{
+    width: 540px;
+    position: absolute;
+    top: 700px;
+    left: -100%;
+    color: #fff;
+    font-size: 20px;
+    transition: left 1s ease;
+}
+.img:hover .img-mask{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.img:hover .img-title{
+    top: 500px;
+}
+.img:hover .img-intro{
+    left: 20px;
+}
+
+  /* 图片遮罩层结束 */
+
+  
